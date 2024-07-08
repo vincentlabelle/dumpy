@@ -25,7 +25,7 @@ line-length = 80
 target-version = "py312"
 
 [tool.ruff.lint]
-select = ["E", "F", "W", "C", "I", "A001", "A002", "S"]
+select = ["E", "F", "C", "I", "A001", "A002", "S"]
 dummy-variable-rgx = "^_$"
 
 [tool.ruff.lint.per-file-ignores]
