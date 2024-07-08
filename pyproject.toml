@@ -25,11 +25,12 @@ line-length = 80
 target-version = "py312"
 
 [tool.ruff.lint]
-select = ["E", "F", "C", "I", "A001", "A002", "S"]
+select = ["E", "F", "C", "I", "A001", "A002", "S", "PLR6301"]
+preview = true
 dummy-variable-rgx = "^_$"
 
 [tool.ruff.lint.per-file-ignores]
-"tests/**.py" = ["S"]
+"tests/**.py" = ["S", "PLR6301"]
 
 [build-system]
 requires = ["poetry-core"]
