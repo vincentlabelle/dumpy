@@ -1,9 +1,11 @@
 from datetime import date
+from importlib.metadata import metadata
 
-project = "dummy"
-author = "Vincent Labelle"
+meta = metadata("dummy")
+project = meta["Name"]
+author = meta["Author"]
 copyright = f"{date.today().year}, {author}"  # noqa: A001
-release = "0.1.0"
+release = meta["Version"]
 version = release
 
 # General configuration
