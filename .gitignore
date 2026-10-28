@@ -1,7 +1,3 @@
-# Editor project settings
-.idea/
-.vscode/
-
 # Testing
 .pytest_cache/
 .mypy_cache/
